@@ -297,7 +297,7 @@ with st.form('add_card'):
     submitted = st.form_submit_button('Add Card')
     if submitted and card_name.strip():
         add_task(card_name.strip())
-        st.experimental_rerun()
+        st.rerun()
 
 # Show today's tasks
 st.subheader("Today's cards")
